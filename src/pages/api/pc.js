@@ -17,46 +17,37 @@ async function run(req, res) {
         await client.connect();
         // Send a ping to confirm a successful connection
         const productsCollection = client.db("PC_Builder").collection("products");
+        const categoriesCollection = client.db("PC_Builder").collection("categories");
+
 
         if (req.method === "GET") {
             const query = req.query;
             let products;
-            if (query) {
+            if(query){
+              if(query.categories){
+                products = await categoriesCollection.find({}).toArray();
+              }else{
                 if (query._id) {
-                    query._id = new ObjectId(query._id);
+                  query._id = new ObjectId(query._id);
                 }
-                products = await productsCollection.find(query).toArray();
-            } else {
-
-                products = await productsCollection.find({}).toArray();
+                 products = await productsCollection.find(query).toArray();
+              }
+            }else{
+      
+               products = await productsCollection.find({}).toArray();
             }
             res.send({ message: "success", status: 200, data: products });
-        }
-
-        //   if (req.method === "GET") {
-        //     const query = req.query;
-        //     let products;
-
-        //     // Check if the request has an _id parameter
-        //     if (query._id) {
-        //       // Convert the _id parameter to ObjectId type
-        //       const objectId = new ObjectId(query._id);
-        //       products = await productsCollection.findOne({ _id: objectId });
-        //     } else {
-        //       products = await productsCollection.find({}).toArray();
-        //     }
-        //     res.send({ message: "success", status: 200, data: products });
-        //   }
-
-        if (req.method === "POST") {
+          }
+      
+          if (req.method === "POST") {
             const products = req.body;
             const result = await productsCollection.insertOne(products);
             res.json(result);
+          }
+        } finally {
+          // Ensures that the client will close when you finish/error
+          // await client.close();
         }
-    } finally {
-        // Ensures that the client will close when you finish/error
-        // await client.close();
-    }
-}
-
-export default run;
+      }
+      
+      export default run;
