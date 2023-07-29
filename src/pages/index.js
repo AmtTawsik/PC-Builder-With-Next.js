@@ -1,4 +1,4 @@
-import React from 'react';
+
 import FeaturedProduct from '@/components/UI/FeaturedProduct';
 import Link from 'next/link';
 
@@ -50,12 +50,12 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
 export default HomePage;
 
 export const getStaticProps = async () => {
-  const response = await fetch("http://localhost:3000/api/pc");
+  const response = await fetch("https://buils-amt-next.vercel.app/api/pc");
   const data = await response.json();
   const randomProducts = getRandomProducts(data.data, 6);
 
 
-  const response2 = await fetch(`http://localhost:3000/api/pc?categories=1`)
+  const response2 = await fetch(`https://buils-amt-next.vercel.app/api/pc?categories=1`)
   const data2 = await response2.json();
   const uniqueCategories = data2.data;
 

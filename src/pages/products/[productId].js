@@ -72,7 +72,7 @@ export async function getServerSideProps({ params }) {
 
     // Fetch the detailed product data using the productId here
     // For demonstration purposes, we'll return dummy data based on productId
-    const response = await fetch(`http://localhost:3000/api/pc?_id=${productId}`);
+    const response = await fetch(`https://buils-amt-next.vercel.app/api/pc?_id=${productId}`);
     const data = await response.json();
     const product = data.data[0];
 

@@ -51,7 +51,7 @@ export default pcBuilder;
 
 export async function getServerSideProps() {
 
-  const response = await fetch(`http://localhost:3000/api/pc?categories=1`);
+  const response = await fetch(`https://buils-amt-next.vercel.app/api/pc?categories=1`);
   const data = await response.json();
   const categories = data.data;
 

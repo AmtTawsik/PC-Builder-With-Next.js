@@ -1,4 +1,4 @@
-// import React from 'react';
+// 
 // import { Layout, Menu, Button } from 'antd';
 // import Link from 'next/link';
 // import { useSession, signOut } from "next-auth/react";
@@ -61,8 +61,6 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
   const { data: session } = useSession();
-
-  console.log("from header", session);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

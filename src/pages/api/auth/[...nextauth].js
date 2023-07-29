@@ -17,7 +17,7 @@ export const authOptions = {
   ],
 
   pages: {
-    signIn: "𝐡𝐭𝐭𝐩𝐬://𝐦𝐲𝐚𝐩𝐩*𝐯𝐞𝐫𝐜𝐞𝐥*𝐚𝐩𝐩/𝐥𝐨𝐠𝐢𝐧",
+    signIn: "https://buils-amt-next.vercel.app/login",
   },
 };
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+
 
 const FeaturedProduct = ({ product }) => {
   const { Image, ProductName, Category, Price, Status, AverageRating, _id } = product;

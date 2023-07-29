@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { signIn } from "next-auth/react";
 import { useRouter } from 'next/router';
 
@@ -56,7 +56,7 @@ export default function Login() {
           <button
             onClick={() =>
               signIn("google", {
-                callbackUrl: callbackUrl || "http://localhost:3000/",
+                callbackUrl: callbackUrl || "https://buils-amt-next.vercel.app/",
               })
             }
             type="button"
@@ -72,7 +72,7 @@ export default function Login() {
           </button>
           <button onClick={() =>
             signIn("github", {
-              callbackUrl: callbackUrl || "http://localhost:3000/",
+              callbackUrl: callbackUrl ||"https://buils-amt-next.vercel.app/",
             })
           } className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-violet-600">
             <svg
