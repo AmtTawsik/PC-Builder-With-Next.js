@@ -19,4 +19,62 @@ The PC Builder Website is a web application built using Next.js, React, and Tail
 ## Instructions to Run the Project
 
 1. Clone the repository:
+git clone <https://github.com/AmtTawsik/PC-Builder-With-Next.js>
+cd pc-builder-website
+
+2. Install dependencies: 
+npm install
+
+3. Start the development server:
+npm run dev
+
+
+4. Open your web browser and navigate to `http://localhost:3000` to access the PC Builder Website.
+
+## Dependencies
+
+The project uses the following main dependencies:
+
+- Next.js: A React framework for building server-rendered applications.
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- NextAuth.js: A library for handling authentication with Next.js applications.
+- Axios: A popular library for making HTTP requests.
+
+## Project Structure
+
+.
+├── components
+│ ├── Navbar.js
+│ ├── ProductCard.js
+│ ├── ProductDetail.js
+│ ├── ...
+│ └── ...
+├── pages
+│ ├── index.js
+│ ├── product
+│ │ ├── [productId].js
+│ │ ├── category
+│ │ │ ├── [categoryId].js
+│ │ │ ├── cpu.js
+│ │ │ ├── motherboard.js
+│ │ │ ├── ...
+│ │ │ └── ...
+│ │ └── ...
+│ ├── pcBuilder.js
+│ └── ...
+├── public
+│ └── images
+│ ├── cpu1.jpg
+│ ├── cpu2.jpg
+│ ├── ...
+│ └── ...
+├── styles
+│ ├── globals.css
+│ ├── ...
+│ └── ...
+├── ...
+├── README.md
+├── package.json
+└── ...
 
