@@ -1,6 +1,6 @@
-# PC Builder Website
+# AMT-Build
 
-The PC Builder Website is a web application built using Next.js, React, and Tailwind CSS. It allows users to explore, customize, and build their dream PC by selecting and assembling various PC components.
+The AMT-Build is a web application built using Next.js, React, and Tailwind CSS. It allows users to explore, customize, and build their dream PC by selecting and assembling various PC components.
 
 ## Live Link : https://buils-amt-next.vercel.app/
 
