@@ -1,6 +1,6 @@
-
 import FeaturedProduct from '@/components/UI/FeaturedProduct';
 import Link from 'next/link';
+import SliderComponent from '@/components/UI/SliderComponent'
 
 const getRandomProducts = (data, count) => {
   const shuffledData = data.sort(() => 0.5 - Math.random());
@@ -20,6 +20,7 @@ const HomePage = ({ randomProducts, uniqueCategories }) => {
 
   return (
     <div className='my-5'>
+      <SliderComponent></SliderComponent>
       <div className="gap-4">
         <h1 className="md:text-5xl text-xl font-bold text-center mb-5">Featured Products</h1>
         <div className='md:w-6/12 mx-auto mb-5 md:mb-10'>

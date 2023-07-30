@@ -40,7 +40,7 @@ const pcBuilder = ({ categories }) => {
         }}
         className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
       >
-        Build you pc
+        Complete Build
       </button>}
     </div>
   );

@@ -3,7 +3,7 @@ export default function FooterComponent() {
     return (
         <>
 
-            <footer class="bg-cyan-100 dark:bg-gray-900 mt-5">
+            <footer class="bg-cyan-500 dark:bg-gray-900 mt-5">
                 <div class="mx-auto w-full p-4 py-6 lg:py-8">
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">

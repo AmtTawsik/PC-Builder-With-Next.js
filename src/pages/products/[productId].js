@@ -14,7 +14,8 @@ const ProductDetails = ({ product }) => {
 
     return (
         <div>
-            <h2>Product Details:</h2>
+            <h2 className="text-center text-2xl font-bold">Product Details:</h2>
+            <hr  className="my-2"/>
             <div className="flex justify-center items-center">
                 <div>
                     {product ? (
@@ -27,16 +28,17 @@ const ProductDetails = ({ product }) => {
                                 />
                             </div>
                             <div className="md:col-span-6 col-span-12">
-                                <h2>{product.ProductName}</h2>
-                                <p>Category: {product.Category}</p>
+                                <h2 className="text-lg font-bold">{product.ProductName}</h2>
+                                <p>Category: <span className="text-yellow-500">{product.Category}</span></p>
                                 <p>
                                     Status:{" "}
-                                    {product.Status === "In Stock" ? "In Stock" : "Out of stock"}
+                                    <span className="text-green-600">{product.Status === "In Stock" ? "In Stock" : "Out of stock"}</span>
                                 </p>
-                                <p>Price: ${product.Price}</p>
-                                <h3>Description</h3>
-                                <p>{product.Description}</p>
-                                <h3>Key Features:</h3>
+                                <p>Price: <span className="font-bold">${product.Price}</span></p>
+                                <h3>Description:</h3>
+                                <p className="text-sm text-gray-600">{product.Description}</p>
+                                <hr className="my-2"/>
+                                <h3 className="text-lg font-bold">Key Features:</h3>
                                 <div>
                                     {Object.entries(product.KeyFeatures).map(([key, value]) => (
                                         <p key={key}>
@@ -47,7 +49,8 @@ const ProductDetails = ({ product }) => {
                                 </div>
                                 <p>Individual Rating: {product.IndividualRating} out of 5 stars</p>
                                 <p>Average Rating: {product.AverageRating} out of 5 stars</p>
-                                <h3>Reviews</h3>
+                                <hr className="my-2"/>
+                                <h3 className="font-bold">Reviews:</h3>
                                 {product?.Reviews?.map((review, index) => (
                                     <div key={index}>
                                         <p>{review}</p>

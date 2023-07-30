@@ -69,7 +69,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 py-4 md:py-2 md:px-4 w-full relative ">
+    <nav className="bg-cyan-500 py-4 md:py-2 md:px-4 w-full relative ">
       <div className="w-full">
         <div className="md:flex justify-between items-center px-2">
           <Link href='/' className="text-white font-bold text-2xl">AMT-Builds</Link>
