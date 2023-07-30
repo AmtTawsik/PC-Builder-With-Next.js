@@ -7,7 +7,7 @@ const SliderComponent = () => {
     return (
         <div>
             <section>
-                <div className="dark:bg-violet-400">
+                <div className="">
                     <div className="container flex flex-col items-center px-4 py-8 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
                         <h1 className="md:text-5xl text-3xl font-bold leadi sm:text-6xl dark:text-gray-900">Empower Your Imagination: Unleash Custom Creations with AMT-Build</h1>
                         <p className="mt-6 mb-8 text-lg sm:mb-12 dark:text-gray-900">Design Your Dream PC: Personalize every detail and unleash the power of custom-built perfection with our PC Builder App.Craft Your Perfect Rig: Explore limitless combinations, assemble with precision, and experience computing at its finest.Build with Confidence: Create a PC tailored to your needs, expertise, and unique style using our intuitive PC Builder App.Unleash Your Creativity: Handpick top-notch components and elevate your computing experience with ease and precision.</p>
