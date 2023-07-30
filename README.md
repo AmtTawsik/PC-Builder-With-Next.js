@@ -39,6 +39,5 @@ The project uses the following main dependencies:
 - React: A JavaScript library for building user interfaces.
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
 - NextAuth.js: A library for handling authentication with Next.js applications.
-- Axios: A popular library for making HTTP requests.
 
 
